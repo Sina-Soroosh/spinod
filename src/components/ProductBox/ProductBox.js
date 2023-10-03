@@ -1,37 +1,39 @@
 import React from "react";
 import "./ProductBox.css";
 
-function ProductBox() {
+function ProductBox(props) {
   return (
     <>
       <div className="card">
-        <div className="off">
-          <p>20%</p>
-        </div>
+        {props.price !== props.priceDiscount ? (
+          <div className="off">
+            <p>OFF</p>
+          </div>
+        ) : null}
         <div className="content-card">
           <div className="row">
             <div className="col-6">
               <div className="image-card">
-                <img
-                  src="https://freedemo.ir/tbe/wp-content/uploads/2020/07/store2-product-12-800x800.jpg"
-                  alt=""
-                />
+                <img src={props.cover} alt={props.title} />
               </div>
             </div>
             <div className="col-6">
               <div className="info">
-                <p className="category-card">clothing</p>
-                <h3>JACKET</h3>
+                <h3>{props.title.toLocaleUpperCase()}</h3>
                 <p className="price-card">
-                  <p className="price-main-card">150 $</p>
-                  <p className="price-off-card">
-                    <del>200 $</del>
+                  <p className="price-main-card">
+                    {props.price !== props.priceDiscount
+                      ? props.priceDiscount
+                      : props.price}{" "}
+                    $
                   </p>
+                  {props.price !== props.priceDiscount ? (
+                    <p className="price-off-card">
+                      <del>{props.price} $</del>
+                    </p>
+                  ) : null}
                 </p>
-                <p className="details">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Architecto, magni.
-                </p>
+                <p className="details">{props.desc}</p>
                 <div className="btns">
                   <button>ADD TO CART</button>
                 </div>

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Index.css";
 import ListProducts from "../../components/ListProducts/ListProducts";
 import GuaranteeBox from "../../components/GuaranteeBox/GuaranteeBox";
@@ -7,8 +7,11 @@ import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import data from "../../data";
 
 function Index() {
+  const [specialProducts, setSpecialProducts] = useState([]);
+  const [bestSellersProducts, setBestSellersProducts] = useState([]);
   const nameRef = useRef();
   const emailRef = useRef();
   const swal = withReactContent(Swal);
@@ -38,6 +41,23 @@ function Index() {
       });
     }
   };
+
+  useEffect(() => {
+    let specialProducts = [];
+    let bestSellersProducts = [];
+
+    for (const category in data.products) {
+      data.products[category].forEach((product) => {
+        product.price !== product.priceDiscount &&
+          specialProducts.push(product);
+
+        Math.floor(Math.random() * 2) && bestSellersProducts.push(product);
+      });
+    }
+
+    setBestSellersProducts(bestSellersProducts.slice(0, 5));
+    setSpecialProducts(specialProducts.splice(0, 5));
+  }, []);
 
   return (
     <>
@@ -90,7 +110,7 @@ function Index() {
       </section>
 
       <section className="special-products">
-        <ListProducts title="Special Products" />
+        <ListProducts title="Special Products" products={specialProducts} />
       </section>
 
       <section className="best-sellers">
@@ -98,6 +118,7 @@ function Index() {
           title="Best Sellers"
           linkBtn=""
           titleBtn="Other products"
+          products={bestSellersProducts}
         />
       </section>
 

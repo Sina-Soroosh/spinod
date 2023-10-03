@@ -315,3 +315,5 @@ const data = {
   },
   blogs: {},
 };
+
+export default data;
