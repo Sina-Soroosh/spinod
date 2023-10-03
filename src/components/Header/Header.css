@@ -1,3 +1,14 @@
+#cover-page {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #0003;
+    display: none;
+    z-index: 3;
+}
+
 header {
     background: rgb(219 181 46 / 80%);
 }
@@ -11,6 +22,24 @@ header .content-header {
 
 header .content-header .logo img {
     width: 150px
+}
+
+header .content-header .icon-menu {
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+header .content-header .menu ul.top-menu {
+    display: none;
+}
+
+.content-header .menu .close-menu {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    font-size: 18px;
 }
 
 header .content-header .menu ul {
@@ -41,4 +70,60 @@ header .content-header .menu ul {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+@media screen and (max-width : 767px) {
+    #cover-page {
+        display: block;
+    }
+
+    header .content-header .icon-menu {
+        display: block;
+    }
+
+    .content-header .menu {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        bottom: 0;
+        background: var(--color-main);
+        padding: 20px 0px;
+        text-align: left;
+        width: 200px;
+        overflow: auto;
+        transition: 0.3s;
+        z-index: 99;
+    }
+
+    .content-header .menu.active {
+        left: 0;
+    }
+
+    header .content-header .menu ul {
+        display: block;
+        padding: 0;
+    }
+
+    header .content-header .menu ul li.icon {
+        display: none;
+    }
+
+    header .content-header .menu ul.top-menu {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+    header .content-header .menu ul.top-menu li.icon {
+        display: block;
+    }
+
+    .content-header .menu ul li a {
+        padding: 10px;
+        border-top: 1px solid #efcb4d;
+    }
+
+    .content-header .menu .close-menu {
+        display: block;
+    }
 }
