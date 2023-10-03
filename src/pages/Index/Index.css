@@ -30,6 +30,10 @@
     width: fit-content;
 }
 
+.categories-images {
+    margin-bottom: 30px;
+}
+
 .categories-images .category {
     position: relative;
     display: block;

@@ -1,0 +1,12 @@
+.list-products {
+    margin: 40px 0;
+}
+
+.list-products .title {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.list-products .container {
+    margin-top: 50px;
+}

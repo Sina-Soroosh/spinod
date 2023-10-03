@@ -1,5 +1,6 @@
 import React from "react";
 import "./Index.css";
+import ListProducts from "../../components/ListProducts/ListProducts";
 
 function Index() {
   return (
@@ -50,6 +51,10 @@ function Index() {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="special-products">
+        <ListProducts title="Special Products" />
       </section>
     </>
   );
