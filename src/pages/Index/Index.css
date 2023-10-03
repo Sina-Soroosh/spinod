@@ -1,0 +1,52 @@
+.offer {
+    width: 100vw;
+    background-image: url(../../../public/images/bg/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+
+.offer h1 {
+    font-size: 43px;
+    font-weight: 800;
+    padding: 30px;
+}
+
+.offer p {
+    padding: 0 40px;
+    font-size: 16px;
+}
+
+.offer .special-products {
+    margin: 20px 40px;
+    background: var(--red-main);
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 30px;
+    display: block;
+    text-decoration: none;
+    width: fit-content;
+}
+
+@media screen and (max-width : 767px) {
+    .offer h1 {
+        padding: 30px 10px;
+    }
+
+    .offer p {
+        padding: 0px 10px;
+    }
+
+    .offer .special-products {
+        margin: 20px 10px;
+    }
+}
+
+@media screen and (max-width : 539px) {
+    .offer p {
+        display: none;
+    }
+}
