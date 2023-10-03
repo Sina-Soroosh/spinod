@@ -1,11 +1,29 @@
 import React, { useState } from "react";
 import "./Header.css";
+import SearchModal from "../SearchModal/SearchModal";
 
 export default function App() {
   const [isShowMenu, setIsShowMenu] = useState(false);
+  const [isShowSearchModal, setIsShowSearchModal] = useState(false);
+
+  const showMenu = () => {
+    setIsShowMenu(true);
+    setIsShowSearchModal(false);
+  };
+
+  const showSearchModal = () => {
+    setIsShowSearchModal(true);
+    setIsShowMenu(false);
+  };
+
+  const closeSearchModal = () => {
+    setIsShowSearchModal(false);
+  };
 
   return (
     <>
+      <SearchModal handleClose={closeSearchModal} open={isShowSearchModal} />
+
       {isShowMenu ? (
         <div id="cover-page" onClick={() => setIsShowMenu(false)}></div>
       ) : null}
@@ -18,7 +36,7 @@ export default function App() {
                   <img src="/images/logo/svg/logo-no-background.svg" alt="" />
                 </div>
 
-                <div className="icon-menu" onClick={() => setIsShowMenu(true)}>
+                <div className="icon-menu" onClick={showMenu}>
                   <i className="fa-solid fa-bars"></i>
                 </div>
 
@@ -39,7 +57,7 @@ export default function App() {
                         0
                       </div>
                     </li>
-                    <li className="icon">
+                    <li className="icon" onClick={showSearchModal}>
                       <i className="fa-solid fa-magnifying-glass"></i>
                     </li>
                   </ul>
@@ -68,7 +86,7 @@ export default function App() {
                         0
                       </div>
                     </li>
-                    <li className="icon">
+                    <li className="icon" onClick={showSearchModal}>
                       <i className="fa-solid fa-magnifying-glass"></i>
                     </li>
                   </ul>

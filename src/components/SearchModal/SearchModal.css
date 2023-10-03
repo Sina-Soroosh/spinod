@@ -1,0 +1,51 @@
+body:has(.search-modal.active) {
+    overflow: hidden;
+}
+
+.search-modal {
+    transition: 0.3s;
+    position: fixed;
+    top: 80px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+}
+
+.search-modal.active {
+    visibility: visible;
+    top: 100px;
+}
+
+.search-modal form {
+    background-color: #fff;
+    width: 80%;
+    box-shadow: 0px 10px 46px 0px rgba(1, 7, 39, .1);
+    display: flex;
+    padding: 15px 0;
+    padding: 15px 10px;
+    justify-content: space-evenly;
+    max-width: 600px;
+    transition: 0.3s;
+}
+
+
+.search-modal form button {
+    border: none;
+    background: transparent;
+}
+
+.search-modal form {
+    font-size: 13px;
+}
+
+.search-modal form input {
+    border: none;
+    width: 100%;
+}
+
+.search-modal form .close {
+    cursor: pointer;
+}
