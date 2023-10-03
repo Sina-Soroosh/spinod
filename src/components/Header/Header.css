@@ -1,0 +1,44 @@
+header {
+    background: rgb(219 181 46 / 80%);
+}
+
+header .content-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    align-items: center;
+}
+
+header .content-header .logo img {
+    width: 150px
+}
+
+header .content-header .menu ul {
+    display: flex;
+}
+
+.content-header .menu ul li {
+    font-size: 14px;
+    color: #000;
+}
+
+.content-header .menu ul li.icon {
+    padding: 0 10px;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+}
+
+.content-header .menu ul li .badge {
+    font-size: 10px;
+}
+
+.content-header .menu ul li a {
+    display: block;
+    padding: 0 11px;
+    font-size: 14px;
+    width: 100%;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
