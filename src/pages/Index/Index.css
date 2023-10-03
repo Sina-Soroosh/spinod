@@ -109,6 +109,10 @@
     border-radius: 30px;
 }
 
+.guarantee {
+    margin: 100px 0;
+}
+
 @media screen and (max-width : 767px) {
     .offer h1 {
         padding: 30px 10px;

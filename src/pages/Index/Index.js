@@ -1,6 +1,7 @@
 import React from "react";
 import "./Index.css";
 import ListProducts from "../../components/ListProducts/ListProducts";
+import GuaranteeBox from "../../components/GuaranteeBox/GuaranteeBox";
 
 function Index() {
   return (
@@ -89,6 +90,38 @@ function Index() {
               </p>
               <a href="">About us</a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="guarantee">
+        <div className="container">
+          <div className="row justify-content-center">
+            <GuaranteeBox
+              img="/images/index/store2-home-icon-1.png"
+              text="Delivery"
+              text2="immediate"
+            />
+            <GuaranteeBox
+              img="/images/index/store2-home-icon-2.png"
+              text="Warranty"
+              text2="originality"
+            />
+            <GuaranteeBox
+              img="/images/index/store2-home-icon-3.png"
+              text="Support"
+              text2="24 hour"
+            />
+            <GuaranteeBox
+              img="/images/index/store2-home-icon-4.png"
+              text="the payment"
+              text2="in place"
+            />
+            <GuaranteeBox
+              img="/images/index/store2-home-icon-5.png"
+              text="A week"
+              text2="Return guarantee"
+            />
           </div>
         </div>
       </section>
