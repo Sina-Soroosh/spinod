@@ -10,3 +10,19 @@
 .list-products .container {
     margin-top: 50px;
 }
+
+.list-products .btn {
+    padding: 7px;
+    background: var(--red-main);
+    color: #fff;
+    font-size: 14px;
+    border-radius: 30px;
+    margin: 30px 0;
+    transition: 0.3s;
+}
+
+.list-products .btn:hover {
+    opacity: 0.95;
+    color: #fff;
+    background: var(--red-main);
+}

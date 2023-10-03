@@ -56,6 +56,14 @@ function Index() {
       <section className="special-products">
         <ListProducts title="Special Products" />
       </section>
+
+      <section className="best-sellers">
+        <ListProducts
+          title="Best Sellers"
+          linkBtn=""
+          titleBtn="Other products"
+        />
+      </section>
     </>
   );
 }
