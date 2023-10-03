@@ -78,6 +78,37 @@
     transform: scale(1.15);
 }
 
+.about .image-about img {
+    width: 100%;
+}
+
+.about .text {
+    padding-top: 100px;
+}
+
+.about .text h2 {
+    font-size: 37px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.about .text p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.about .text a {
+    margin-top: 50px;
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    background: var(--red-main);
+    width: fit-content;
+    padding: 5px 20px;
+    border-radius: 30px;
+}
+
 @media screen and (max-width : 767px) {
     .offer h1 {
         padding: 30px 10px;
@@ -89,6 +120,11 @@
 
     .offer .special-products {
         margin: 20px 10px;
+    }
+
+    .about .text {
+        margin-top: 20px;
+        padding: 20px;
     }
 }
 

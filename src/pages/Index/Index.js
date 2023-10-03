@@ -64,6 +64,34 @@ function Index() {
           titleBtn="Other products"
         />
       </section>
+
+      <section className="about">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="image-about">
+                <img
+                  src="/images/index/store2-home-shopping-craze.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="col-md-6 text">
+              <h2>Spinod fashion and clothing online store</h2>
+              <p>
+                Spinod, after years of success as an online store without goods,
+                has specialized in the field of fashion, clothing and lifestyle,
+                so that the same sweet experience can be repeated in a new way.
+                In Digistyle, you can find everything related to fashion and
+                clothing; Find everything from clothes, bags and shoes to
+                cosmetics, home appliances and accessories like watches and
+                sunglasses at special discounts at auctions.
+              </p>
+              <a href="">About us</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
