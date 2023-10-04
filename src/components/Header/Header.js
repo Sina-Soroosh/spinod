@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Header.css";
 import SearchModal from "../SearchModal/SearchModal";
+import { Link } from "react-router-dom";
 
 export default function App() {
   const [isShowMenu, setIsShowMenu] = useState(false);
@@ -63,10 +64,10 @@ export default function App() {
                   </ul>
                   <ul>
                     <li>
-                      <a href="">Home</a>
+                      <Link to="/">Home</Link>
                     </li>
                     <li>
-                      <a href="">Products</a>
+                      <Link to="/products">Products</Link>
                     </li>
                     <li>
                       <a href="">About us</a>

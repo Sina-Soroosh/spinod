@@ -1,6 +1,7 @@
 import React from "react";
 import ProductBox from "../ProductBox/ProductBox";
 import "./ListProducts.css";
+import { Link } from "react-router-dom";
 
 function ListProducts({ title, linkBtn, titleBtn, products }) {
   return (
@@ -15,9 +16,9 @@ function ListProducts({ title, linkBtn, titleBtn, products }) {
           ))}
           {titleBtn ? (
             <div className="col-12 justify-content-center d-flex">
-              <a className="btn" href={linkBtn}>
+              <Link className="btn" to={linkBtn}>
                 {titleBtn}
-              </a>
+              </Link>
             </div>
           ) : null}
         </div>

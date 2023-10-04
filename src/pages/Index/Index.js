@@ -8,6 +8,7 @@ import withReactContent from "sweetalert2-react-content";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import data from "../../data";
+import { Link } from "react-router-dom";
 
 function Index() {
   const [specialProducts, setSpecialProducts] = useState([]);
@@ -70,9 +71,9 @@ function Index() {
                 The autumn collection of the best brands in the world is at your
                 disposal with a discount and guarantee of authenticity
               </p>
-              <a href="" className="special-products">
+              <Link to="/products" className="special-products">
                 Special Products
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -116,7 +117,7 @@ function Index() {
       <section className="best-sellers">
         <ListProducts
           title="Best Sellers"
-          linkBtn=""
+          linkBtn="/products"
           titleBtn="Other products"
           products={bestSellersProducts}
         />
