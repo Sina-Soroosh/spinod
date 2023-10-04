@@ -73,7 +73,7 @@ function Products() {
           <div className="col-12 title-products">
             <h2>Products</h2>
           </div>
-          <div className="col-md-9">
+          <div className="col-lg-9">
             <div className="content-products">
               <div className="row">
                 {shownProducts.map((product) => (
@@ -100,7 +100,7 @@ function Products() {
               )}
             </div>
           </div>
-          <div className="col-md-3 mb-3">
+          <div className="col-lg-3 mb-3">
             <ProductCategories />
             <FilterPrice
               minValue={minValue}
