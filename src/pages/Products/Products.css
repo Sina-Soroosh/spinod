@@ -1,0 +1,28 @@
+.products .title-products {
+    padding: 65px 0;
+    text-align: center;
+}
+
+.products .title-products h2 {
+    font-size: 37px;
+    font-weight: 700;
+}
+
+.products .content-products {
+    margin: 30px 0;
+}
+
+.products .content-products .pagination {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.content-products .pagination li button {
+    font-size: 13px;
+}
+
+.content-products .pagination button[aria-current="true"] {
+    background-color: var(--red-main) !important;
+    color: #fff !important;
+}

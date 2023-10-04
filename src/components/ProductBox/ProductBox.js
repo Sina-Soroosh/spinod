@@ -21,12 +21,7 @@ function ProductBox(props) {
               <div className="info">
                 <h3>{props.title.toLocaleUpperCase()}</h3>
                 <p className="price-card">
-                  <p className="price-main-card">
-                    {props.price !== props.priceDiscount
-                      ? props.priceDiscount
-                      : props.price}{" "}
-                    $
-                  </p>
+                  <p className="price-main-card">{props.priceDiscount} $</p>
                   {props.price !== props.priceDiscount ? (
                     <p className="price-off-card">
                       <del>{props.price} $</del>

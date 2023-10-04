@@ -1,0 +1,45 @@
+.product-categories {
+    margin: 30px 0;
+}
+
+.product-categories h3 {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.product-categories .list {
+    margin: 10px 0;
+    background: var(--red-main);
+    padding: 0;
+}
+
+.product-categories .list li {
+    position: relative;
+}
+
+.product-categories .list a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 13px;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.product-categories .list a:hover {
+    padding: 10px 15px;
+    background: rgb(235, 60, 112);
+    background: linear-gradient(90deg, rgba(235, 60, 112, 1) 25%, rgba(255, 255, 255, 1) 100%);
+}
+
+.product-categories .list li::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    position: absolute;
+    display: block;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(235, 60, 112, 1) 56%);
+}

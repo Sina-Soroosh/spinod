@@ -1,0 +1,35 @@
+.filter-price {
+    border-top: 1px solid #eee;
+}
+
+.filter-price h3 {
+    margin: 11px 0;
+}
+
+.filter-price .slider {
+    padding: 0 10px;
+}
+
+.filter-price .slider .MuiSlider-root {
+    color: var(--red-main);
+}
+
+.filter-price p {
+    font-size: 13px;
+    color: #555;
+}
+
+.filter-price p span {
+    font-size: 15px;
+    color: var(--red-main);
+    cursor: pointer;
+}
+
+.filter-price button {
+    border: none;
+    color: #fff;
+    background: var(--red-main);
+    font-size: 14px;
+    padding: 5px 30px;
+    border-radius: 30px;
+}
