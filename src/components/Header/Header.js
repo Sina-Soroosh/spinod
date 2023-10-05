@@ -70,7 +70,7 @@ export default function App() {
                       <Link to="/products">Products</Link>
                     </li>
                     <li>
-                      <a href="">About us</a>
+                      <Link to="/about">About us</Link>
                     </li>
                     <li>
                       <a href="">Blogs</a>

@@ -113,7 +113,7 @@ function Index() {
                 cosmetics, home appliances and accessories like watches and
                 sunglasses at special discounts at auctions.
               </p>
-              <a href="">About us</a>
+              <Link to="/about">About us</Link>
             </div>
           </div>
         </div>
