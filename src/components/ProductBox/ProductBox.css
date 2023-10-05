@@ -25,6 +25,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    cursor: pointer;
 }
 
 .card .image-card img {
@@ -42,6 +43,7 @@
 .card h3 {
     font-size: 20px;
     color: var(--red-main);
+    cursor: pointer;
 }
 
 .card .price-card {
@@ -50,6 +52,7 @@
     color: var(--red-main);
     margin: 10px 0;
     align-items: center;
+    cursor: pointer;
 }
 
 .card .price-card .price-main-card {

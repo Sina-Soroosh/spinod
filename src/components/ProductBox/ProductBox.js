@@ -1,7 +1,14 @@
 import React from "react";
 import "./ProductBox.css";
+import { useNavigate } from "react-router-dom";
 
 function ProductBox(props) {
+  const navigate = useNavigate();
+
+  const productDetails = () => {
+    navigate(`/product/${props.shortName}`);
+  };
+
   return (
     <>
       <div className="card">
@@ -13,14 +20,16 @@ function ProductBox(props) {
         <div className="content-card">
           <div className="row">
             <div className="col-6">
-              <div className="image-card">
+              <div className="image-card" onClick={productDetails}>
                 <img src={props.cover} alt={props.title} />
               </div>
             </div>
             <div className="col-6">
               <div className="info">
-                <h3>{props.title.toLocaleUpperCase()}</h3>
-                <p className="price-card">
+                <h3 onClick={productDetails}>
+                  {props.title.toLocaleUpperCase()}
+                </h3>
+                <p className="price-card" onClick={productDetails}>
                   <p className="price-main-card">{props.priceDiscount} $</p>
                   {props.price !== props.priceDiscount ? (
                     <p className="price-off-card">
