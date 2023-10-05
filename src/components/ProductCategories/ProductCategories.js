@@ -1,18 +1,19 @@
 import React, { useEffect, useState } from "react";
 import "./ProductCategories.css";
 import data from "../../data";
+import { Link } from "react-router-dom";
 
 function ProductCategories() {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    let categoies = [];
+    let categories = [];
 
     for (const category in data.products) {
-      categoies.push(category);
+      categories.push(category);
     }
 
-    setCategories(categoies);
+    setCategories(categories);
   }, []);
 
   return (
@@ -22,7 +23,7 @@ function ProductCategories() {
         <ul className="list">
           {categories.map((category) => (
             <li className="category" key={category}>
-              <a href="">{category}</a>
+              <Link to={`/products-category/${category}`}>{category}</Link>
             </li>
           ))}
         </ul>

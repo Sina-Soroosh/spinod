@@ -83,28 +83,28 @@ function Index() {
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-4">
-              <a href="" className="category">
+              <Link to="/products-category/clothing" className="category">
                 <img src="/images/index/store2-home-category-1.jpg" alt="" />
                 <div className="details-category">
                   <h2>Clothing</h2>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-4">
-              <a href="" className="category">
+              <Link to="/products-category/jewelry" className="category">
                 <img src="/images/index/store2-home-category-2-1.jpg" alt="" />
                 <div className="details-category">
-                  <h2>Jewellery</h2>
+                  <h2>Jewelry</h2>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-4">
-              <a href="" className="category">
+              <Link to="/products-category/cosmetic" className="category">
                 <img src="/images/index/store2-home-category-3.jpg" alt="" />
                 <div className="details-category">
                   <h2>Cosmetic</h2>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
