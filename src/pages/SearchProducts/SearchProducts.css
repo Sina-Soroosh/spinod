@@ -1,0 +1,28 @@
+.products-search .title-products-search {
+    padding: 65px 0;
+    text-align: center;
+}
+
+.products-search .title-products-search h2 {
+    font-size: 37px;
+    font-weight: 700;
+}
+
+.products-search .content-products-search {
+    margin: 30px 0;
+}
+
+.products-search .content-products-search .pagination {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.content-products-search .pagination li button {
+    font-size: 13px;
+}
+
+.content-products-search .pagination button[aria-current="true"] {
+    background-color: var(--red-main) !important;
+    color: #fff !important;
+}
