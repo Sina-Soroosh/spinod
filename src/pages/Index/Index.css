@@ -113,62 +113,6 @@
     margin: 100px 0;
 }
 
-.newsletters .image-newsletters {
-    text-align: center;
-}
-
-.newsletters .image-newsletters img {
-    width: 250px;
-}
-
-.newsletters .content-newsletters {
-    background-color: var(--color-main);
-    background-image: url(../../../public/images/index/store2-home-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.newsletters .content-newsletters h2 {
-    font-size: 37px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.newsletters .content-newsletters p {
-    font-size: 15px;
-    font-weight: 400;
-    padding: 0 50px;
-}
-
-.newsletters .content-newsletters form {
-    margin: 20px 0;
-}
-
-.newsletters .content-newsletters form input {
-    color: #000000;
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-    border-bottom: 1px solid #000000;
-    width: 90%;
-    font-size: 15px;
-    margin-bottom: 30px;
-}
-
-.newsletters .content-newsletters form .btn-submit button {
-    border: none;
-    background: var(--red-main);
-    color: #fff;
-    font-size: 15px;
-    padding: 5px 30px;
-    border-radius: 30px;
-}
-
-.newsletters .slider-newsletters img {
-    width: 100%;
-}
-
 .swal2-icon {
     margin: auto;
 }
