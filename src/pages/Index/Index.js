@@ -99,10 +99,10 @@ function Index() {
               </Link>
             </div>
             <div className="col-md-4">
-              <Link to="/products-category/cosmetic" className="category">
+              <Link to="/products-category/cosmetics" className="category">
                 <img src="/images/index/store2-home-category-3.jpg" alt="" />
                 <div className="details-category">
-                  <h2>Cosmetic</h2>
+                  <h2>Cosmetics</h2>
                 </div>
               </Link>
             </div>
