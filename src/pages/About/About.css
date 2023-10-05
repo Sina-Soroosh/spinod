@@ -1,0 +1,55 @@
+.about .desc-about {
+    padding: 50px 200px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.about .content-about {
+    margin-bottom: 50px;
+}
+
+.about .content-about .image-about img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.about .content-about .text-about {
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.about .content-about .text-about h4 {
+    font-size: 37px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.about .content-about .text-about p {
+    font-size: 15px;
+}
+
+.about .content-about .text-about a {
+    margin: 20px 0;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    background: #f6f6f6;
+    width: fit-content;
+    font-size: 15px;
+    padding: 5px 20px;
+    border-radius: 30px;
+}
+
+@media screen and (max-width : 991px) {
+    .about .desc-about {
+        padding: 50px 100px;
+    }
+}
+
+@media screen and (max-width : 767px) {
+    .about .desc-about {
+        padding: 50px 10px;
+    }
+}
