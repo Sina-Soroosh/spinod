@@ -1,0 +1,144 @@
+.product .title-product {
+    padding: 65px 0;
+    text-align: center;
+}
+
+.product .title-product h2 {
+    font-size: 37px;
+    font-weight: 700;
+}
+
+.product .image-product img {
+    width: 100%;
+}
+
+.product .info-product {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.product .name-product {
+    font-size: 35px;
+    padding: 10px 0;
+    position: relative;
+}
+
+.product .name-product::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    background: rgb(226, 226, 226);
+    background: linear-gradient(90deg, rgba(226, 226, 226, 1) 0%, rgba(255, 255, 255, 1) 36%, rgba(255, 255, 255, 1) 100%);
+}
+
+.product .price-product span {
+    font-size: 30px;
+    margin-right: 10px;
+    color: var(--red-main);
+}
+
+.product .price-product span del {
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.product .desc-product {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.product .add-cart button {
+    border: none;
+    color: #fff;
+    background: var(--red-main);
+    font-size: 15px;
+    padding: 5px 25px;
+    border-radius: 30px;
+    margin: 15px 0;
+}
+
+.product .category-product p {
+    font-size: 15px;
+    color: #a8a8a8;
+}
+
+.product .category-product a {
+    color: var(--red-main);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.product .share-product {
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.product .share-product .icon {
+    margin: 0 5px;
+}
+
+.product .share-product a {
+    color: #bbb;
+    transition: 0.3s;
+}
+
+.product .share-product .facebook a:hover {
+    color: #3B5998;
+}
+
+.product .share-product .linkedin a:hover {
+    color: #0077B5;
+}
+
+.product .share-product .tweeter a:hover {
+    color: #1DA1F2;
+}
+
+.product .share-product .pinter a:hover {
+    color: #BD081B;
+}
+
+.product .bottom-product .list {
+    border-bottom: 1px solid #bbb;
+    padding: 0;
+    display: flex;
+}
+
+.product .bottom-product .list li {
+    font-size: 15px;
+    padding: 10px;
+    border-bottom: 1px solid var(--red-main);
+    color: var(--red-main);
+}
+
+.product .bottom-product .desc-product {
+    padding: 0 10px;
+}
+
+.product .bottom-product .options-title {
+    padding: 0 10px;
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.product .bottom-product .options {
+    padding: 0 15px;
+    margin: 15px 0;
+}
+
+.product .bottom-product .options li {
+    color: #999;
+    font-size: 13px;
+    margin: 10px 0;
+    list-style: disc;
+}
+
+.product .related-products {
+    margin: 20px 0;
+}
+
+.product .related-products .swiper-slide {
+    padding: 10px;
+}
