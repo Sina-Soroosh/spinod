@@ -28,7 +28,7 @@ function Login() {
                   <input type="password" id="password" />
                 </div>
               </div>
-              <Link className="register-link" to="">
+              <Link className="register-link" to="/register">
                 You don't have a account?
               </Link>
               <button className="login-btn">Login</button>

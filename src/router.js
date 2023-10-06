@@ -6,6 +6,7 @@ import Login from "./pages/Login/Login";
 import Product from "./pages/Product/Product";
 import Products from "./pages/Products/Products";
 import ProductsCategory from "./pages/ProductsCategory/ProductsCategory";
+import Register from "./pages/Register/Register";
 import SearchProducts from "./pages/SearchProducts/SearchProducts";
 
 const router = [
@@ -18,6 +19,7 @@ const router = [
   { path: "/contact", element: <Contact /> },
   { path: "/cart", element: <Cart /> },
   { path: "/login", element: <Login /> },
+  { path: "/register", element: <Register /> },
 ];
 
 export default router;
