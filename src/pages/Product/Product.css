@@ -142,3 +142,11 @@
 .product .related-products .swiper-slide {
     padding: 10px;
 }
+
+.swal2-container {
+    margin: 30px;
+}
+
+.swal2-title {
+    font-size: 12px !important;
+}

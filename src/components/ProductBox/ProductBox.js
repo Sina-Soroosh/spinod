@@ -4,10 +4,13 @@ import "./ProductBox.css";
 import { useNavigate } from "react-router-dom";
 import data from "../../data";
 import { CartContext } from "../../context/CartContext";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
 
 function ProductBox(props) {
   const navigate = useNavigate();
   const { cart, setCart } = useContext(CartContext);
+  const swal = withReactContent(Swal);
 
   const productDetails = () => {
     navigate(`/product/${props.shortName}`);
@@ -35,6 +38,20 @@ function ProductBox(props) {
       console.log("object");
       newCart[indexProductInCart].count++;
     }
+
+    swal.fire({
+      toast: true,
+      icon: "success",
+      title: "The product has been successfully added to the cart",
+      position: "bottom-left",
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener("mouseenter", swal.stopTimer);
+        toast.addEventListener("mouseleave", swal.resumeTimer);
+      },
+    });
 
     setCart(newCart);
   };
