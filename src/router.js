@@ -2,6 +2,7 @@ import About from "./pages/About/About";
 import Cart from "./pages/Cart/Cart";
 import Contact from "./pages/Contact/Contact";
 import Index from "./pages/Index/Index";
+import Login from "./pages/Login/Login";
 import Product from "./pages/Product/Product";
 import Products from "./pages/Products/Products";
 import ProductsCategory from "./pages/ProductsCategory/ProductsCategory";
@@ -16,6 +17,7 @@ const router = [
   { path: "/about", element: <About /> },
   { path: "/contact", element: <Contact /> },
   { path: "/cart", element: <Cart /> },
+  { path: "/login", element: <Login /> },
 ];
 
 export default router;

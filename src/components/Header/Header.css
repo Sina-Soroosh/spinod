@@ -118,6 +118,10 @@ header .content-header .menu ul {
         display: block;
     }
 
+    .content-header .menu ul li.icon a {
+        border: none;
+    }
+
     .content-header .menu ul li a {
         padding: 10px;
         border-top: 1px solid #efcb4d;

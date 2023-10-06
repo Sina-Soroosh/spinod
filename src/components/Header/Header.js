@@ -68,7 +68,9 @@ export default function App() {
                   </div>
                   <ul className="top-menu">
                     <li className="icon">
-                      <i className="fa-solid fa-user"></i>
+                      <Link to="/login">
+                        <i className="fa-solid fa-user"></i>
+                      </Link>
                     </li>
                     <li className="icon" onClick={goToBasket}>
                       <i className="fa-solid fa-bag-shopping"></i>
@@ -97,7 +99,9 @@ export default function App() {
                       <Link to="/contact">Contact us</Link>
                     </li>
                     <li className="icon">
-                      <i className="fa-solid fa-user"></i>
+                      <Link to="/login">
+                        <i className="fa-solid fa-user"></i>
+                      </Link>
                     </li>
                     <li className="icon" onClick={goToBasket}>
                       <i className="fa-solid fa-bag-shopping"></i>
