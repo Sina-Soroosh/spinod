@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./Product.css";
 import { Link, useLocation, useParams } from "react-router-dom";
 import data from "../../data";
 import ProductCategories from "../../components/ProductCategories/ProductCategories";
 import ProductBox from "../../components/ProductBox/ProductBox";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { CartContext } from "../../context/CartContext";
 
 function Product() {
   const [product, setProduct] = useState({});
@@ -12,6 +13,7 @@ function Product() {
   const [category, setCategory] = useState("");
   const { productName } = useParams();
   const location = useLocation();
+  const { cart, setCart } = useContext(CartContext);
 
   useEffect(() => {
     let productDetails = {};
@@ -37,6 +39,32 @@ function Product() {
     setRelatedProducts(relatedProducts.slice(0, 5));
     setCategory(categoryProduct);
   }, [location]);
+
+  const addToCart = () => {
+    let newCart = [...cart];
+    let indexProductInCart = -1;
+    indexProductInCart = cart.findIndex((product) => product.id === product.id);
+
+    if (indexProductInCart === -1) {
+      let productDetails = {};
+      for (const category in data.products) {
+        data.products[category].forEach((product) => {
+          if (product.id === product.id) {
+            productDetails = product;
+          }
+        });
+      }
+
+      productDetails.count = 1;
+      console.log(productDetails);
+      newCart.push(productDetails);
+    } else {
+      console.log("object");
+      newCart[indexProductInCart].count++;
+    }
+
+    setCart(newCart);
+  };
 
   return (
     <div className="product">
@@ -67,7 +95,7 @@ function Product() {
                       </div>
                       <p className="desc-product">{product.desc}</p>
                       <div className="add-cart">
-                        <button>Add To Cart</button>
+                        <button onClick={addToCart}>Add To Cart</button>
                       </div>
                       <div className="category-product">
                         <p>

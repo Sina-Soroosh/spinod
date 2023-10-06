@@ -1,12 +1,25 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./Header.css";
 import SearchModal from "../SearchModal/SearchModal";
 import { Link, useNavigate } from "react-router-dom";
+import { CartContext } from "../../context/CartContext";
 
 export default function App() {
   const [isShowMenu, setIsShowMenu] = useState(false);
   const [isShowSearchModal, setIsShowSearchModal] = useState(false);
+  const [countCart, setCountCart] = useState(0);
   const navigate = useNavigate();
+  const { cart } = useContext(CartContext);
+
+  useEffect(() => {
+    let count = 0;
+
+    cart.forEach((product) => {
+      count += product.count;
+    });
+
+    setCountCart(count);
+  }, [cart]);
 
   const showMenu = () => {
     setIsShowMenu(true);
@@ -60,7 +73,7 @@ export default function App() {
                     <li className="icon" onClick={goToBasket}>
                       <i className="fa-solid fa-bag-shopping"></i>
                       <div className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                        0
+                        {countCart}
                       </div>
                     </li>
                     <li className="icon" onClick={showSearchModal}>
@@ -89,7 +102,7 @@ export default function App() {
                     <li className="icon" onClick={goToBasket}>
                       <i className="fa-solid fa-bag-shopping"></i>
                       <div className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                        0
+                        {countCart}
                       </div>
                     </li>
                     <li className="icon" onClick={showSearchModal}>
