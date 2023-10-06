@@ -1,0 +1,55 @@
+.register .title-register {
+    text-align: center;
+    padding: 50px 0;
+
+}
+
+.register .title-register h3 {
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 700;
+}
+
+.register .form-register {
+    padding: 50px 0;
+}
+
+.register .form-register label {
+    font-size: 15px;
+}
+
+.register .form-register label span {
+    color: var(--red-main);
+}
+
+.register .form-register input {
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid #000;
+    font-size: 15px;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.register .form-register .login-link {
+    color: #999;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+.register .form-register .login-link:hover {
+    text-decoration: underline;
+}
+
+.register .form-register .register-btn {
+    width: 100%;
+    border: none;
+    margin: 10px 0;
+    color: #fff;
+    background: var(--red-main);
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 30px;
+}
