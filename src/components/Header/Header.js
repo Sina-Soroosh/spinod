@@ -7,9 +7,10 @@ import { Context } from "../../context/Context";
 export default function App() {
   const [isShowMenu, setIsShowMenu] = useState(false);
   const [isShowSearchModal, setIsShowSearchModal] = useState(false);
+  const [render, setRender] = useState(false);
   const [countCart, setCountCart] = useState(0);
   const navigate = useNavigate();
-  const { cart } = useContext(Context);
+  const { cart, isLogin } = useContext(Context);
 
   useEffect(() => {
     let count = 0;
@@ -20,6 +21,10 @@ export default function App() {
 
     setCountCart(count);
   }, [cart]);
+
+  useEffect(() => {
+    setRender((prevRender) => !prevRender);
+  }, [isLogin]);
 
   const showMenu = () => {
     setIsShowMenu(true);
@@ -68,7 +73,7 @@ export default function App() {
                   </div>
                   <ul className="top-menu">
                     <li className="icon">
-                      <Link to="/login">
+                      <Link to={isLogin ? "/" : `/login`}>
                         <i className="fa-solid fa-user"></i>
                       </Link>
                     </li>
@@ -99,7 +104,7 @@ export default function App() {
                       <Link to="/contact">Contact us</Link>
                     </li>
                     <li className="icon">
-                      <Link to="/login">
+                      <Link to={isLogin ? "/" : `/login`}>
                         <i className="fa-solid fa-user"></i>
                       </Link>
                     </li>
