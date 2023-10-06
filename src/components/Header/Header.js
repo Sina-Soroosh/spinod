@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import "./Header.css";
 import SearchModal from "../SearchModal/SearchModal";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function App() {
   const [isShowMenu, setIsShowMenu] = useState(false);
   const [isShowSearchModal, setIsShowSearchModal] = useState(false);
+  const navigate = useNavigate();
 
   const showMenu = () => {
     setIsShowMenu(true);
@@ -19,6 +20,10 @@ export default function App() {
 
   const closeSearchModal = () => {
     setIsShowSearchModal(false);
+  };
+
+  const goToBasket = () => {
+    navigate("/cart");
   };
 
   return (
@@ -52,7 +57,7 @@ export default function App() {
                     <li className="icon">
                       <i className="fa-solid fa-user"></i>
                     </li>
-                    <li className="icon">
+                    <li className="icon" onClick={goToBasket}>
                       <i className="fa-solid fa-bag-shopping"></i>
                       <div className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                         0
@@ -81,7 +86,7 @@ export default function App() {
                     <li className="icon">
                       <i className="fa-solid fa-user"></i>
                     </li>
-                    <li className="icon">
+                    <li className="icon" onClick={goToBasket}>
                       <i className="fa-solid fa-bag-shopping"></i>
                       <div className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                         0

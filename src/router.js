@@ -1,4 +1,5 @@
 import About from "./pages/About/About";
+import Cart from "./pages/Cart/Cart";
 import Contact from "./pages/Contact/Contact";
 import Index from "./pages/Index/Index";
 import Product from "./pages/Product/Product";
@@ -14,6 +15,7 @@ const router = [
   { path: "/product/:productName", element: <Product /> },
   { path: "/about", element: <About /> },
   { path: "/contact", element: <Contact /> },
+  { path: "/cart", element: <Cart /> },
 ];
 
 export default router;
