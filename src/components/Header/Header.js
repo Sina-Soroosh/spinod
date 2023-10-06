@@ -76,7 +76,7 @@ export default function App() {
                       <a href="">Blogs</a>
                     </li>
                     <li>
-                      <a href="">Contact us</a>
+                      <Link to="/contact">Contact us</Link>
                     </li>
                     <li className="icon">
                       <i className="fa-solid fa-user"></i>

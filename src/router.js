@@ -1,4 +1,5 @@
 import About from "./pages/About/About";
+import Contact from "./pages/Contact/Contact";
 import Index from "./pages/Index/Index";
 import Product from "./pages/Product/Product";
 import Products from "./pages/Products/Products";
@@ -12,6 +13,7 @@ const router = [
   { path: "/search/:keyWord", element: <SearchProducts /> },
   { path: "/product/:productName", element: <Product /> },
   { path: "/about", element: <About /> },
+  { path: "/contact", element: <Contact /> },
 ];
 
 export default router;

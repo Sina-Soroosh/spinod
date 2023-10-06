@@ -2,6 +2,7 @@ import React from "react";
 import "./About.css";
 import GuaranteeBox from "../../components/GuaranteeBox/GuaranteeBox";
 import Newsletters from "../../components/Newsletters/Newsletters";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -85,7 +86,7 @@ function About() {
                     caused more people to join the group of internet service
                     users every day.
                   </p>
-                  <a href="">Contact</a>
+                  <Link to="/contact">Contact</Link>
                 </div>
               </div>
             </div>
@@ -103,7 +104,7 @@ function About() {
                     caused more people to join the group of internet service
                     users every day.
                   </p>
-                  <a href="">discount code</a>
+                  <Link to="/contact">discount code</Link>
                 </div>
               </div>
             </div>
