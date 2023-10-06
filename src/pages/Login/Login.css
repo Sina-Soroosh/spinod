@@ -1,0 +1,55 @@
+.login .title-login {
+    text-align: center;
+    padding: 50px 0;
+
+}
+
+.login .title-login h3 {
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 700;
+}
+
+.login .form-login {
+    padding: 50px 0;
+}
+
+.login .form-login label {
+    font-size: 15px;
+}
+
+.login .form-login label span {
+    color: var(--red-main);
+}
+
+.login .form-login input {
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid #000;
+    font-size: 15px;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.login .form-login .register-link {
+    color: #999;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+.login .form-login .register-link:hover {
+    text-decoration: underline;
+}
+
+.login .form-login .login-btn {
+    width: 100%;
+    border: none;
+    margin: 10px 0;
+    color: #fff;
+    background: var(--red-main);
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 30px;
+}
