@@ -3,13 +3,13 @@ import React, { useContext, useEffect } from "react";
 import "./ProductBox.css";
 import { useNavigate } from "react-router-dom";
 import data from "../../data";
-import { CartContext } from "../../context/CartContext";
+import { Context } from "../../context/Context";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 
 function ProductBox(props) {
   const navigate = useNavigate();
-  const { cart, setCart } = useContext(CartContext);
+  const { cart, setCart } = useContext(Context);
   const swal = withReactContent(Swal);
 
   const productDetails = () => {

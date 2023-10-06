@@ -2,11 +2,11 @@ import React, { useContext, useEffect, useState } from "react";
 import "./Cart.css";
 import ProductCart from "../../components/ProductCart/ProductCart";
 import { Link } from "react-router-dom";
-import { CartContext } from "../../context/CartContext";
+import { Context } from "../../context/Context";
 
 function Cart() {
   const [totalCart, setTotalCart] = useState(0);
-  const { cart, setCart } = useContext(CartContext);
+  const { cart, setCart } = useContext(Context);
 
   useEffect(() => {
     let sum = 0;

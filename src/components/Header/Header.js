@@ -2,14 +2,14 @@ import React, { useContext, useEffect, useState } from "react";
 import "./Header.css";
 import SearchModal from "../SearchModal/SearchModal";
 import { Link, useNavigate } from "react-router-dom";
-import { CartContext } from "../../context/CartContext";
+import { Context } from "../../context/Context";
 
 export default function App() {
   const [isShowMenu, setIsShowMenu] = useState(false);
   const [isShowSearchModal, setIsShowSearchModal] = useState(false);
   const [countCart, setCountCart] = useState(0);
   const navigate = useNavigate();
-  const { cart } = useContext(CartContext);
+  const { cart } = useContext(Context);
 
   useEffect(() => {
     let count = 0;

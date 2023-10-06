@@ -1,12 +1,12 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./ProductCart.css";
-import { CartContext } from "../../context/CartContext";
+import { Context } from "../../context/Context";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 
 function ProductCart(props) {
   const [sumPrice, setSumPrice] = useState(0);
-  const { cart, setCart } = useContext(CartContext);
+  const { cart, setCart } = useContext(Context);
   const swal = withReactContent(Swal);
 
   useEffect(() => {

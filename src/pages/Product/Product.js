@@ -5,7 +5,7 @@ import data from "../../data";
 import ProductCategories from "../../components/ProductCategories/ProductCategories";
 import ProductBox from "../../components/ProductBox/ProductBox";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { CartContext } from "../../context/CartContext";
+import { Context } from "../../context/Context";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 
@@ -15,7 +15,7 @@ function Product() {
   const [category, setCategory] = useState("");
   const { productName } = useParams();
   const location = useLocation();
-  const { cart, setCart } = useContext(CartContext);
+  const { cart, setCart } = useContext(Context);
   const swal = withReactContent(Swal);
 
   useEffect(() => {
