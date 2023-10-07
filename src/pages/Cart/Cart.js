@@ -74,7 +74,9 @@ function Cart() {
                         <span className="total">{totalCart.toFixed(1)} $</span>
                       </div>
                       <div className="checkout-btn">
-                        <Link to="/">Continue to settle the account</Link>
+                        <Link to="/checkout">
+                          Continue to settle the account
+                        </Link>
                       </div>
                       <div className="continue-shopping">
                         <Link to="/products">Continue shopping</Link>

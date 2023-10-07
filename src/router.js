@@ -1,5 +1,6 @@
 import About from "./pages/About/About";
 import Cart from "./pages/Cart/Cart";
+import Checkout from "./pages/Checkout/Checkout";
 import Contact from "./pages/Contact/Contact";
 import Index from "./pages/Index/Index";
 import Login from "./pages/Login/Login";
@@ -20,6 +21,7 @@ const router = [
   { path: "/cart", element: <Cart /> },
   { path: "/login", element: <Login /> },
   { path: "/register", element: <Register /> },
+  { path: "/checkout", element: <Checkout /> },
 ];
 
 export default router;
