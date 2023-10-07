@@ -76,3 +76,7 @@
     color: #fff;
     border-radius: 5px;
 }
+
+.swal2-popup.swal2-toast .swal2-title {
+    font-size: 12px !important;
+}
