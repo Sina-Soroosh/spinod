@@ -72,7 +72,7 @@ function Product() {
       title: "The product has been successfully added to the cart",
       position: "bottom-left",
       showConfirmButton: false,
-      timer: 300000,
+      timer: 3000,
       timerProgressBar: true,
       didOpen: (toast) => {
         toast.addEventListener("mouseenter", swal.stopTimer);
