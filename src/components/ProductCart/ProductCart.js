@@ -3,6 +3,7 @@ import "./ProductCart.css";
 import { Context } from "../../context/Context";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
+import { Link } from "react-router-dom";
 
 function ProductCart(props) {
   const [sumPrice, setSumPrice] = useState(0);
@@ -72,10 +73,14 @@ function ProductCart(props) {
   return (
     <tr className="product-cart">
       <td className="image-product-cart">
-        <img src={props.cover} alt={props.title} />
+        <Link to={`/product/${props.shortName}`}>
+          <img src={props.cover} alt={props.title} />
+        </Link>
       </td>
       <td>
-        <span>{props.title}</span>
+        <Link to={`/product/${props.shortName}`}>
+          <span>{props.title}</span>
+        </Link>
       </td>
       <td className="price-product-cart">{props.priceDiscount} $</td>
       <td>
