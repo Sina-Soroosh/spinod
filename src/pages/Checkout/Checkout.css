@@ -1,0 +1,122 @@
+.checkout .title-checkout {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.checkout .title-checkout h2 {
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 700;
+}
+
+.checkout {
+    margin-bottom: 50px;
+}
+
+.checkout .title-form-checkout {
+    font-size: 34px;
+    line-height: 47px;
+    font-weight: 400;
+}
+
+.checkout .form-checkout {
+    margin: 10px 0;
+}
+
+.checkout .form-checkout .input-form-checkout {
+    margin-bottom: 10px;
+}
+
+.checkout .form-checkout .input-form-checkout label {
+    font-size: 15px;
+}
+
+.checkout .form-checkout .input-form-checkout label span {
+    color: var(--red-main);
+}
+
+.checkout .form-checkout .input-form-checkout input {
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid #000;
+    font-size: 15px;
+}
+
+.checkout .col-lg-5 {
+    padding: 20px;
+}
+
+.checkout .order-review {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, .03);
+    border-radius: 8px;
+}
+
+.checkout .order-review .title-order-review h4 {
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.checkout .order-review .table-order-review table {
+    width: 100%;
+}
+
+.checkout .order-review .table-order-review table th {
+    padding: 10px;
+    line-height: 1.4;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.checkout .order-review .table-order-review table td {
+    padding: 10px;
+    line-height: 1.4;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.checkout .order-review .table-order-review table .cart-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.table-order-review table .cart-item td:first-child {
+    display: flex;
+    justify-content: center;
+}
+
+.table-order-review table .cart-item .count-cart-item {
+    padding: 5px;
+    background: #eee;
+    width: 20px;
+    display: flex;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.checkout .order-review .btns button {
+    width: 100%;
+    border: none;
+    padding: 5px 0;
+    color: #fff;
+    background: var(--red-main);
+    border-radius: 30px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.checkout .order-review .btns a {
+    font-size: 12px;
+    color: #999;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.checkout .order-review .btns a:hover {
+    text-decoration: underline;
+    color: #000;
+}
