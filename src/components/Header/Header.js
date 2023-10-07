@@ -98,9 +98,6 @@ export default function App() {
                       <Link to="/about">About us</Link>
                     </li>
                     <li>
-                      <a href="">Blogs</a>
-                    </li>
-                    <li>
                       <Link to="/contact">Contact us</Link>
                     </li>
                     <li className="icon">
