@@ -1,0 +1,47 @@
+.my-account .title-my-account {
+    text-align: center;
+    padding: 50px 0;
+
+}
+
+.my-account .title-my-account h3 {
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 700;
+}
+
+.my-account .form-my-account {
+    margin-bottom: 50px;
+}
+
+.my-account .form-my-account label {
+    font-size: 15px;
+}
+
+.my-account .form-my-account input {
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid #000;
+    font-size: 15px;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.my-account .form-my-account button {
+    width: fit-content;
+    border: none;
+    margin: 10px;
+    color: #fff;
+    background: var(--red-main);
+    font-size: 15px;
+    padding: 5px 20px;
+    border-radius: 30px;
+}
+
+.swal2-popup {
+    font-size: 14px;
+}
+
+.swal2-popup .swal2-title {
+    font-size: 20px !important;
+}

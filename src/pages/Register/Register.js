@@ -18,9 +18,9 @@ function Register() {
 
   useEffect(() => {
     if (isLogin) {
-      navigate("/");
+      navigate("/my-account");
     }
-  }, []);
+  }, [isLogin]);
 
   const registerUser = (e) => {
     e.preventDefault();
@@ -72,7 +72,7 @@ function Register() {
       };
 
       setUser(user);
-      navigate("/");
+      navigate("/my-account");
     }
   };
 

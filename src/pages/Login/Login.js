@@ -14,9 +14,9 @@ function Login() {
 
   useEffect(() => {
     if (isLogin) {
-      navigate("/");
+      navigate("/my-account");
     }
-  }, []);
+  }, [isLogin]);
 
   const loginUser = (e) => {
     e.preventDefault();
@@ -43,7 +43,7 @@ function Login() {
       };
 
       setUser(user);
-      navigate("/");
+      navigate("/my-account");
     }
   };
 
