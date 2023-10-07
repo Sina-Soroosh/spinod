@@ -73,7 +73,7 @@ export default function App() {
                   </div>
                   <ul className="top-menu">
                     <li className="icon">
-                      <Link to={isLogin ? "/" : `/login`}>
+                      <Link to={isLogin ? "/my-account" : `/login`}>
                         <i className="fa-solid fa-user"></i>
                       </Link>
                     </li>
@@ -104,7 +104,7 @@ export default function App() {
                       <Link to="/contact">Contact us</Link>
                     </li>
                     <li className="icon">
-                      <Link to={isLogin ? "/" : `/login`}>
+                      <Link to={isLogin ? "/my-account" : `/login`}>
                         <i className="fa-solid fa-user"></i>
                       </Link>
                     </li>

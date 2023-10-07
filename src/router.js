@@ -4,6 +4,7 @@ import Checkout from "./pages/Checkout/Checkout";
 import Contact from "./pages/Contact/Contact";
 import Index from "./pages/Index/Index";
 import Login from "./pages/Login/Login";
+import MyAccount from "./pages/MyAccount/MyAccount";
 import Product from "./pages/Product/Product";
 import Products from "./pages/Products/Products";
 import ProductsCategory from "./pages/ProductsCategory/ProductsCategory";
@@ -22,6 +23,7 @@ const router = [
   { path: "/login", element: <Login /> },
   { path: "/register", element: <Register /> },
   { path: "/checkout", element: <Checkout /> },
+  { path: "/my-account", element: <MyAccount /> },
 ];
 
 export default router;
