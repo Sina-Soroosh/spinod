@@ -12,6 +12,8 @@
 
 .register .form-register {
     padding: 50px 0;
+    width: 50%;
+    margin: auto;
 }
 
 .register .form-register label {
@@ -44,7 +46,7 @@
 }
 
 .register .form-register .register-btn {
-    width: 100%;
+    width: 100px;
     border: none;
     margin: 10px 0;
     color: #fff;
@@ -52,4 +54,16 @@
     font-size: 15px;
     padding: 5px;
     border-radius: 30px;
+}
+
+@media screen and (max-width : 991px) {
+    .register .form-register {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width : 767px) {
+    .register .form-register {
+        width: 100%;
+    }
 }

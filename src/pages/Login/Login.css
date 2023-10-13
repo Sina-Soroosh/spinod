@@ -12,6 +12,8 @@
 
 .login .form-login {
     padding: 50px 0;
+    width: 50%;
+    margin: auto;
 }
 
 .login .form-login label {
@@ -44,7 +46,7 @@
 }
 
 .login .form-login .login-btn {
-    width: 100%;
+    width: 100px;
     border: none;
     margin: 10px 0;
     color: #fff;
@@ -52,4 +54,16 @@
     font-size: 15px;
     padding: 5px;
     border-radius: 30px;
+}
+
+@media screen and (max-width : 991px) {
+    .login .form-login {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width : 767px) {
+    .login .form-login {
+        width: 100%;
+    }
 }
