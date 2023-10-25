@@ -10,6 +10,7 @@
 - CSS
 - JS
 - React JS
+- Bootstrap
 - React Router DOM
 - SweetAlert 2
 - Swiper
