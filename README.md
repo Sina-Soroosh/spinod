@@ -2,7 +2,7 @@
 
 > Sepinod store site developed with React library.
 
-## [Live Demo](https://spinod.iran.liara.run/)
+## [Live Demo](https://spinod.vercel.app/)
 
 ## Built With
 
